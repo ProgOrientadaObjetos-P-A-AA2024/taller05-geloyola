@@ -15,14 +15,14 @@ public class Promedios {
    private double caliMateria3;
    private double promedio;
    
-   public Promedios(String n, double c1, double c2, double c3){
+   public Promedios(String n, double c1, double c2){
        nombre = n;
        caliMateria1 = c1;
        caliMateria2 = c2;
-       caliMateria3 = c3;
+      
        
    }
-   public Promedios(String n,double c1, double c2){
+   public Promedios(String n,double c1, double c2, double c3){
        nombre = n;
        caliMateria1 = c1;
        caliMateria2 = c2;

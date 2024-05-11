@@ -1,6 +1,6 @@
 package Paquete1;
 
-import Paquete2.Promedios;
+
 import java.util.Scanner;
 
 /**
@@ -39,6 +39,9 @@ public class Ejecutor {
                 cali1 = entrada.nextDouble();
                 System.out.println("Ingrese calificacion 2; ");
                 cali2 = entrada.nextDouble();
+                Promedios promedio1 = new Promedios(nombreE,cali1,cali2); 
+                promedio1.calcularPromedio();
+                System.out.printf("%s\n",promedio1);
 
             } else {
 
@@ -51,6 +54,11 @@ public class Ejecutor {
                     cali2 = entrada.nextDouble();
                     System.out.println("ingrese calificacion 3; ");
                     cali3 = entrada.nextDouble();
+                    Promedios promedio2 = new Promedios(nombreE,cali1,
+                            cali2,cali3);
+                    promedio2.calcularPromedio();
+                    System.out.printf("%s\n",promedio2);
+                   
 
                 } else {
                     System.out.println("Opcion no valida");
